@@ -7,13 +7,13 @@ describe('Thermostat', () => {
     expect(thermostat.getTemperature()).toBe(20);
   })
 
-  test('it has an initial temperature of 20 degrees then increases by 1', () => {
+  test('can increase the temperature', () => {
     thermostat.up();
     thermostat.up();
     expect(thermostat.getTemperature()).toBe(22);
   })
 
-  test('it can decrease the temperature by 1', () => {
+  test('can decrease the temperature', () => {
     thermostat.down();
     expect(thermostat.getTemperature()).toBe(21);
   })
